@@ -98,10 +98,6 @@ div.dashboard .container-post {
   flex: 1 0 22%;
 }
 
-.dashboard .post-list-container {
-  padding: 4em 2em;
-}
-
 @media screen and (max-width:1280px) {
   .user-profile {
       right: 16px;

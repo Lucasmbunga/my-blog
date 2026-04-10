@@ -37,24 +37,29 @@
 .header .container>div:nth-child(2) {
   justify-content: flex-end;
 }
+.header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  list-style-type: none;
+}
 
-
-.button{
+ .header .button{
 
   border-radius: .5em;
   transition: all .3s ease-in-out;
 }
-.button:hover{
+.header .button:hover{
   transform: scale(1.03);
 }
-.login-button{
+.header .login-button{
   padding: .5em 2em;
   background-color: rgba(64, 99, 216, 0.272);
 }
-.login-button, .signup-button{
+.header .login-button, .signup-button{
   color: var(--principal);
 }
-.signup-button{
+.header .signup-button{
   padding: .5em 1em;
   border:2px solid  rgba(64, 99, 216, 0.938);
 }

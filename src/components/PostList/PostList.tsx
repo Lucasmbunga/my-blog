@@ -4,12 +4,15 @@ import PostCard from "../PostCard/PostCard";
 import ContainerCards from "../ContainerCards/ContainerCards";
 import './PostList.css'
 
-const PostList: FC = () => {
+interface PostListProps{
+  title?: string;
+}
+const PostList: FC<PostListProps> = ({title}:PostListProps) => {
   posts.map(post => post.abstract = "")
   return (
     <>
       <div className="post-list-container">
-        <h2>Todos os Artigos</h2>
+        <h2>{title}</h2>
         <ContainerCards>
           {posts.map((post, index) => (
             <PostCard {...post} key={index} />

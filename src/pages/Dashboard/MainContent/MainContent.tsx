@@ -5,6 +5,7 @@ import "./MainContent.css"
 import { FaRegEdit } from "react-icons/fa";
 import { FaUser } from "react-icons/fa6";
 import { BiCategoryAlt } from "react-icons/bi";
+import Button from "../../../components/Button/Button";
 
 const MainContent: FC = ({ children }: PropsWithChildren) => {
   return (
@@ -17,6 +18,20 @@ const MainContent: FC = ({ children }: PropsWithChildren) => {
         <DashboardCard title="Users" count={2} children={<FaUser />} />
         {children}
       </ContainerCards>
+      <div className="statistics">
+        <div className="graphic-container">
+          <div className="top-bar">
+            <h2>Visitor Growth</h2>
+            <div className="box-buttons">
+              <Button text="Mensalmente" />
+              <Button text="Anualmente" />
+            </div>
+          </div>
+        </div>
+        <div className="latest-posts-container">
+          <h3>Últimos posts</h3>
+        </div>
+      </div>
     </div>
   );
 }

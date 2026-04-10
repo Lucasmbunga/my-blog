@@ -25,7 +25,7 @@ const DashboardNavBar: FC = () => {
         </li>
         <li>
 
-          <NavLink to={"/dashboard/media"} className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>Media</NavLink>
+          <NavLink to={"/dashboard/media"} className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>Tags</NavLink>
         </li>
         <li>
 

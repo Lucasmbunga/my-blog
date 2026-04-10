@@ -10,6 +10,7 @@ import ImageUpload from './components/DashboardContainer'
 import Login from './pages/Login/Login'
 import Register from './pages/Register/Register'
 import CategoriesContent from './pages/Dashboard/CategoriesContent/CategoriesContent'
+import PostsContent from './pages/Dashboard/PostsContent/PostsContent'
 
 
 function App() {
@@ -22,9 +23,9 @@ function App() {
 
           <Route path='/dashboard' element={<Dashboard />} >
 
-            <Route path='/dashboard/categories' element={<CategoriesContent />} />
-            <Route path='/dashboard/posts' element={<PostList />}></Route>
             <Route path='/dashboard/' element={<DashboardMain></DashboardMain>}></Route>
+            <Route path='/dashboard/categories' element={<CategoriesContent />} />
+            <Route path='/dashboard/posts' element={<PostsContent />}></Route>
           </Route>
 
           <Route path={"/about"} element={<About />} />
