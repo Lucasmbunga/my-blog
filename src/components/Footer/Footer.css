@@ -1,0 +1,14 @@
+.footer{
+  text-align: center;
+  padding: 3em 0;
+  border-top: 1px solid rgba(108, 106, 106, 0.224);
+}
+.footer p{
+  line-height: 1.5em;
+}
+
+@media screen and (max-width:600px) {
+  .footer{
+    padding: 1.8em 0;
+  }
+}

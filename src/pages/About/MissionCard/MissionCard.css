@@ -1,0 +1,31 @@
+:root {
+  --principal: #2563EB;
+  --secondary: #3B82F6;
+  --text-color: #75758a;
+}
+
+.mission-card {
+  background-color: rgba(37, 100, 235, 0.035);
+  margin-top: 3em;
+  padding: 3em 4em;
+  border-radius: 1em;
+}
+
+.mission-card h3,
+.mission-card p {
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.mission-card h3 {
+  font-size: 1.5em;
+  margin-bottom: .5em;
+}
+
+
+@media screen and (max-width:600px) {
+  .mission-card {
+    padding: 3em 1.8em;
+  }
+
+}

@@ -1,0 +1,176 @@
+:root {
+  --principal: #2563EB;
+  --secondary: #3B82F6;
+  --text-color: #75758a;
+}
+
+.login-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.login-container::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2564ebdb;
+  z-index: -1;
+}
+
+.voltar-inicio{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 2em;
+  color: var(--secondary);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container .image {
+  position: relative;
+  height: 100%;
+  background-image: url('./background3.3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60% 50%;
+  flex: 1 1 50%;
+}
+
+.login-container .image::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, #2563EB, #2564eb75, #2564eb1f);
+  animation: animarFundo 5s ease-in-out infinite alternate;
+}
+@keyframes animarFundo{
+  0%{
+    opacity: 0.5;
+  }
+}
+
+.login-container .right {
+  height: 100%;
+  flex: 1 1 50%;
+  background-color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 2px solid rgb(250, 248, 248);
+}
+
+.login-container .login-form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 2px solid white;
+  padding: 4em 2em;
+  padding-bottom: 3em;
+  border-radius: 1em;
+  z-index: 1;
+}
+
+.login-form h1 {
+  color: var(--secondary);
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+  margin-bottom: 1em;
+}
+
+.form-group input {
+  background-color: rgba(230, 229, 229, 0.546);
+  padding: .8em 1em;
+  border-radius: .5em;
+  border: 1px solid var(--secondary);
+
+}
+
+.form-group input:focus {
+  outline: 1px solid var(--secondary);
+
+}
+
+.login-form button {
+  padding: .5em 1em;
+  background-color: var(--secondary);
+  color: white;
+  font-size: 1.1em;
+  border-radius: .5em;
+  border: 0;
+  margin-top: 1em;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.login-form button:hover {
+  background-color: var(--principal);
+}
+
+p.password-forget {
+  color: var(--secondary);
+  margin-top: 1em;
+  text-align: center;
+}
+
+.password-forget .link {
+  color: inherit;
+  font-weight: bold;
+}
+
+@media screen and (max-width:884px) {
+
+  .login-container .image {
+    display: none;
+    background-image: none;
+
+  }
+
+  .login-container .right {
+    flex: 1 1 100%;
+    background-color: white;
+  }
+
+  .login-container .login-form {
+    width: 60%;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width:600px) {
+
+  .login-container .login-form {
+    width: 90%;
+  }
+
+}
+
+@media screen and (max-width:320px) {
+  
+  .login-container .login-form {
+    width: 100%;
+    padding: 2em 1.5em;
+  }
+}

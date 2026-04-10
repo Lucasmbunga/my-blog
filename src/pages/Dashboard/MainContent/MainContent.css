@@ -1,0 +1,20 @@
+.main{
+  height: 100vh;
+  padding: 4em;
+  background-color: #F8FAFC;
+}
+.main .container-cards{
+
+  justify-content: space-between;
+  gap: 1.5em;
+}
+
+@media screen and (max-width:990px) {
+  .main{
+    padding: 4em 2em;
+  }
+  .main .container-cards{
+    justify-content: flex-start;
+    gap: .5em;
+  }
+}

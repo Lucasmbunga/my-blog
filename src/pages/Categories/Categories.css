@@ -1,0 +1,21 @@
+.categories-content{
+  padding: 4em;
+}
+.categories-content h2{
+  margin-bottom: .5em;
+}
+
+.categories-content p{
+  font-size: 1.1em;
+}
+.categories-content .card{
+  align-items: center;
+  justify-content: center;
+
+}
+
+@media screen and (max-width:600px) {
+  .categories-content{
+    padding: 4em 2em;
+  }
+}

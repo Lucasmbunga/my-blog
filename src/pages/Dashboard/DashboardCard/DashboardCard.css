@@ -1,0 +1,47 @@
+:root {
+  --principal: #2563EB;
+  --secondary: #3B82F6;
+  --text-color: #75758a;
+}
+
+.dashboard-card {
+  flex: 1 1 25%;
+  display: flex;
+  justify-content: space-between;
+  gap: 4em;
+  background-color: #2564eb54;
+  color: var(--secondary);
+  border-radius: .5em;
+  padding: 2em;
+}
+
+.dashboard-card .icon{
+  font-size: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard-card h3 {
+  color: black;
+  margin-bottom: .5em;
+}
+
+.dashboard-card p {
+  font-size: 1.5em;
+  color: var(--secondary);
+}
+
+@media screen and (max-width:1086px) {
+  .dashboard-card {
+    flex: 1 1 20%;
+    gap: 2em;
+    padding: 2em;
+  }
+}
+@media screen and (max-width:990px) {
+  .dashboard-card {
+    flex: 0 1 48%;
+    gap: 2em;
+    padding: 2em;
+  }
+}

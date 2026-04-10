@@ -1,0 +1,31 @@
+
+:root {
+  --principal: #2563EB;
+  --secondary: #3B82F6;
+  --text-color: #75758a;
+}
+.about-content{
+  width: 100%;
+  padding: 4em;
+}
+
+.about-content>h2{
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: .5em;
+}
+.about-content>p{
+  color:var(--text-color) ;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+p{
+  color: var(--text-color);
+}
+
+@media screen and (max-width:600px) {
+  .about-content {
+      padding: 2em;
+    }    
+}

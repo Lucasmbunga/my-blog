@@ -1,0 +1,81 @@
+:root {
+  --principal: #2563EB;
+  --secondary: #3B82F6;
+  --text-color: #75758a;
+}
+
+.categories-content {
+  width: 100%;
+  height: 100%;
+  padding: 4em !important;
+  background-color: #F8FAFC;
+}
+
+.categories-content h1 {
+  margin-bottom: 1em;
+}
+
+.add-category {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1em;
+}
+
+.add-category .add-icon {
+  font-size: 1.5em;
+  margin-right: .2em;
+}
+
+.add-category button {
+  background-color: var(--secondary);
+  color: white;
+  font-weight: bold;
+}
+
+.categories-list {
+  border-top: 2px solid rgba(0, 0, 0, 0.687);
+  padding: 2em 0;
+  list-style-type: none;
+  height: 100%;
+}
+
+.categories-list li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border: 1.5px solid rgba(174, 181, 186, 0.263);
+  border-radius: .8em;
+  margin-bottom: .8em;
+  padding: .5em 2em;
+}
+
+.categories-content li .edit {
+  position: absolute;
+  right: 15%;
+  font-size: 1.5em;
+  padding: .1em;
+  cursor: pointer;
+  border-radius: .2em;
+  transition: all .3s ease-in-out;
+}
+
+.categories-content li .edit:hover {
+  background-color: rgba(144, 156, 168, 0.358);
+}
+
+.categories-content li .delete {
+  font-size: 1.5em;
+  cursor: pointer;
+  border-radius: .2em;
+  padding: .1em;
+  transition: all .3s ease-in-out;
+}
+.categories-content .delete .delete-icon{
+  color: rgb(220, 80, 80);
+}
+
+.categories-content li .delete:hover {
+  background-color: rgba(144, 156, 168, 0.358);
+}

@@ -1,0 +1,45 @@
+:root {
+  --principal: #2563EB;
+  --secondary: #3B82F6;
+  --text-color: #75758a;
+}
+
+.card{
+  flex: 0 1 31%;
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+  padding: 1.5em;
+  border: 1px solid rgba(100, 99, 99, 0.21);
+  border-radius: .8em;
+  transition: all .3s ease-in-out;
+}
+.card:hover{
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.221);
+}
+.card h3{
+  font-size: 1.3em;
+  margin-bottom: .3em;
+}
+.card .icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #2564eb3e;
+  border-radius: 50%;
+  margin-bottom: .8em;
+  color:var(--secondary) ;
+
+}
+@media screen and (max-width:768px) {
+  .card{
+    flex: 0 1 48%;
+  }
+}
+@media screen and (max-width:600px) {
+  .card{
+    flex: 0 1 100%;
+  }
+}

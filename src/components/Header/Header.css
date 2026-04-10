@@ -1,0 +1,77 @@
+:root {
+  --principal: #2563EB;
+  --secondary:#3B82F6;
+  --text-color:#75758a;
+}
+
+.header {
+  width: 100%;
+  background-color: white;
+  border-bottom: 1.5px solid #D0D7DE;
+  padding: 0 2em;
+  color: var(--secondary);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+}
+
+.container .logo{
+  font-weight: bolder;
+  border: 3px solid var(--secondary);
+  border-top: 0;
+  border-right: 0;
+  padding: 1em;
+  border-radius: 50%;
+}
+.header .container>div {
+  display: flex;
+  gap: 2em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .container>div:nth-child(2) {
+  justify-content: flex-end;
+}
+
+
+.button{
+
+  border-radius: .5em;
+  transition: all .3s ease-in-out;
+}
+.button:hover{
+  transform: scale(1.03);
+}
+.login-button{
+  padding: .5em 2em;
+  background-color: rgba(64, 99, 216, 0.272);
+}
+.login-button, .signup-button{
+  color: var(--principal);
+}
+.signup-button{
+  padding: .5em 1em;
+  border:2px solid  rgba(64, 99, 216, 0.938);
+}
+
+@media screen and (max-width:600px) {
+  
+  .header{
+    padding: 1em;
+  }
+  .header .nav-link, .login-button{
+    display: none;
+  }
+}
+
+@media screen and (max-width:360px) {
+  
+  .header{
+    padding: 1em;
+  }
+}
