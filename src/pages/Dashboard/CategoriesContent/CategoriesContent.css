@@ -7,7 +7,7 @@
 .categories-content {
   width: 100%;
   height: 100%;
-  padding: 4em !important;
+  padding: 3em !important;
   background-color: #F8FAFC;
 }
 
@@ -21,20 +21,9 @@
   margin-bottom: 1em;
 }
 
-.add-category .add-icon {
-  font-size: 1.5em;
-  margin-right: .2em;
-}
-
-.add-category button {
-  background-color: var(--secondary);
-  color: white;
-  font-weight: bold;
-}
-
 .categories-list {
   border-top: 2px solid rgba(0, 0, 0, 0.687);
-  padding: 2em 0;
+  padding: 2em  0;
   list-style-type: none;
   height: 100%;
 }
@@ -48,12 +37,12 @@
   border: 1.5px solid rgba(174, 181, 186, 0.263);
   border-radius: .8em;
   margin-bottom: .8em;
-  padding: .5em 2em;
+  padding: 1em 2em;
 }
 
 .categories-content li .edit {
   position: absolute;
-  right: 15%;
+  right: 10%;
   font-size: 1.5em;
   padding: .1em;
   cursor: pointer;
@@ -78,4 +67,16 @@
 
 .categories-content li .delete:hover {
   background-color: rgba(144, 156, 168, 0.358);
+}
+
+.categories-content .categories-list p{
+  color: var(--text-color);
+  padding-top: 1em;
+  line-height: 1.5em;
+}
+.categories-content .form-group{
+  width: 300px;
+}
+.categories-content p{
+  font-size: .9em;
 }

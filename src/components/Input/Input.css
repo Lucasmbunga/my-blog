@@ -1,0 +1,19 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: .8em;
+  margin-bottom: 1em;
+}
+
+.form-group input {
+  background-color: rgba(230, 229, 229, 0.546);
+  padding: .8em 1em;
+  border-radius: .5em;
+  border: 1px solid var(--secondary);
+
+}
+
+.form-group input:focus {
+  outline: 1px solid var(--secondary);
+
+}

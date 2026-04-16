@@ -1,0 +1,14 @@
+:root {
+  --text-color: #75758a;
+}
+
+.container-empty-result{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-empty-result p {
+  color: var(--text-color);
+}

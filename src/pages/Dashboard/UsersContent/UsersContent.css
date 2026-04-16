@@ -1,0 +1,16 @@
+:root {
+  --principal: #2563EB;
+  --secondary: #3B82F6;
+  --text-color: #75758a;
+}
+
+.users-content-container {
+  padding: 4em;
+  height: 100%;
+}
+
+.users-content {
+  margin-top: 2em;
+  width: 100%;
+  z-index: 1;
+}

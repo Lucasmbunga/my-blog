@@ -1,0 +1,50 @@
+.tags-content-container {
+  padding: 4em;
+  height: 100%;
+  background-color: rgb(249, 247, 247);
+}
+
+.tag-content {
+  padding: .5em 1em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  border: 2px solid rgba(0, 0, 0, 0.299);
+  border-radius: .5em;
+}
+
+.container-button-add {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 2em;
+  margin-bottom: -1em;
+  font-weight: bold;
+}
+
+.tag-content .edit-icon {
+  font-size: 1.5em;
+  padding: .1em;
+  cursor: pointer;
+  border-radius: .2em;
+  transition: all .3s ease-in-out;
+}
+
+.tag-content .edit-icon:hover {
+  background-color: rgba(144, 156, 168, 0.358);
+}
+
+.tag-content .delete-icon {
+  font-size: 1.3em;
+  cursor: pointer;
+  border-radius: .2em;
+  padding: .1em;
+  transition: all .3s ease-in-out;
+}
+
+.tag-content .delete-icon {
+  color: rgb(220, 80, 80);
+}
+
+.tag-content .delete-icon:hover {
+  background-color: rgba(144, 156, 168, 0.358);
+}

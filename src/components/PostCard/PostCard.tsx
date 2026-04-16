@@ -1,7 +1,7 @@
 import type { FC } from "react";
-import type { PostProps } from "../../interface/PostProps";
 import { Link } from "react-router-dom";
 import './PostCard.css'
+import {type PostProps } from '../../services/postService';
 
 const PostCard: FC<PostProps> = ({ title, slug, abstract, imageUrl }: PostProps) => {
   return (

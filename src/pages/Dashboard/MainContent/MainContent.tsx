@@ -6,16 +6,22 @@ import { FaRegEdit } from "react-icons/fa";
 import { FaUser } from "react-icons/fa6";
 import { BiCategoryAlt } from "react-icons/bi";
 import Button from "../../../components/Button/Button";
+import useCategoriesData from "../../../hooks/useCategoriesData/useCategoriesData";
+import useGetUsers from "../../../hooks/useUsersData/useUsersData";
+import usePostsData from "../../../hooks/usePostsData/usePostsData";
 
 const MainContent: FC = ({ children }: PropsWithChildren) => {
+  const { data:categories } = useCategoriesData();
+  const { data: users } = useGetUsers();
+  const { data: posts } = usePostsData();
   return (
     <div className="main">
       <h2>Dashboard</h2>
       <p>Home/Dashboard</p>
       <ContainerCards>
-        <DashboardCard title="Posts" count={10} children={<FaRegEdit />} />
-        <DashboardCard title="Categories" count={3} children={<BiCategoryAlt />} />
-        <DashboardCard title="Users" count={2} children={<FaUser />} />
+        <DashboardCard title="Posts" count={posts?.totalElements} children={<FaRegEdit />} />
+        <DashboardCard title="Categories" count={categories?.totalElements} children={<BiCategoryAlt />} />
+        <DashboardCard title="Users" count={users?.totalElements} children={<FaUser />} />
         {children}
       </ContainerCards>
       <div className="statistics">

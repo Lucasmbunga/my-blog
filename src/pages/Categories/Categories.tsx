@@ -1,12 +1,12 @@
-import type { FC, PropsWithChildren } from "react";
+import {type FC, type PropsWithChildren } from "react";
 import Header from "../../components/Header/Header";
 import ContainerCards from "../../components/ContainerCards/ContainerCards";
 import CommonCard from "../../components/CommonCard/CommonCard";
 import "./Categories.css"
+import Footer from "../../components/Footer/Footer";
 
 
 const Categories: FC = ({ children }: PropsWithChildren) => {
-
   return (
     <>
       <Header />
@@ -24,6 +24,7 @@ const Categories: FC = ({ children }: PropsWithChildren) => {
         </ContainerCards>
         {children}
       </div>
+        <Footer/>
     </>
   );
 }

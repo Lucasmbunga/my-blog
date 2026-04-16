@@ -2,12 +2,13 @@ import type { FC, ReactElement } from "react";
 import './Button.css'
 interface ButtonProps{
   text: string;
-  children?:ReactElement
+  children?: ReactElement;
+  handlerClick?(): void;
 }
 
-const Button: FC<ButtonProps> = ({text,children}:ButtonProps) => {
+const Button: FC<ButtonProps> = ({text,children,handlerClick}:ButtonProps) => {
   return (
-    <button className="button">{children}{ text}</button>
+    <button className="button" onClick={handlerClick}>{children}{ text}</button>
   );
 }
 export default Button;

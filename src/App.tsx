@@ -11,6 +11,10 @@ import Login from './pages/Login/Login'
 import Register from './pages/Register/Register'
 import CategoriesContent from './pages/Dashboard/CategoriesContent/CategoriesContent'
 import PostsContent from './pages/Dashboard/PostsContent/PostsContent'
+import TagsContent from './pages/Dashboard/TagsContent/TagsContent'
+import UsersContent from './pages/Dashboard/UsersContent/UsersContent'
+import SucessModal from './components/SucessModal/SucessModal'
+import LoginSucessModal from './pages/Login/LoginSucessModal/LoginSucessModal'
 
 
 function App() {
@@ -26,6 +30,8 @@ function App() {
             <Route path='/dashboard/' element={<DashboardMain></DashboardMain>}></Route>
             <Route path='/dashboard/categories' element={<CategoriesContent />} />
             <Route path='/dashboard/posts' element={<PostsContent />}></Route>
+            <Route path='/dashboard/tags' element={<TagsContent />} />
+            <Route path='/dashboard/users' element={ <UsersContent/>} />
           </Route>
 
           <Route path={"/about"} element={<About />} />
@@ -33,6 +39,7 @@ function App() {
           <Route path='/sign-in' element={<Login />} />
           <Route path='/sign-up' element={<Register />} />
           <Route path='/teste' element={<ImageUpload />} />
+          <Route path='/sucess-login-modal' element={ <LoginSucessModal/>} />
         </Routes>
       </BrowserRouter>
     </>

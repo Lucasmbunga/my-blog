@@ -1,3 +1,9 @@
+:root {
+  --principal: #2563EB;
+  --secondary: #3B82F6;
+  --text-color: #75758a;
+}
+
 .posts-content-container {
   width: 100%;
   height: 100%;
@@ -7,10 +13,26 @@
 
 .posts-content-container .top-bar {
   display: flex;
-  gap: 1em;
   align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  margin-top: 4em;
 }
 
 .posts-content-container h1{
   margin-bottom: 1em;
+}
+
+.top-bar>div{
+  display: flex;
+  gap: 1em;
+}
+
+.top-bar select{
+  padding: .5em 1em;
+  border-radius: .5em;
+}
+
+.top-bar select:focus{
+  outline: 1px solid var(--secondary);
 }

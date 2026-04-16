@@ -3,11 +3,11 @@ import "./DashboardCard.css"
 
 interface CardProps{
   title: string;
-  count: number;
+  count: number | undefined;
   children:ReactNode
 }
 
-const DashboardCard: FC<CardProps> = ({title,count,children}: CardProps) => {
+const DashboardCard: FC<CardProps> = ({title,count=0,children}: CardProps) => {
   return (
     <div className="dashboard-card">
       <div>

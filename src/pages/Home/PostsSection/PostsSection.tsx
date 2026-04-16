@@ -1,10 +1,12 @@
 import type { FC } from "react";
 import PostCard from "../../../components/PostCard/PostCard";
 import './PostsSection.css'
-import posts from "../../../data/posts";
+import usePosts from "../../../hooks/usePosts/usePosts";
 
 
 const PostsSection: FC = () => {
+
+  const { data: posts } = usePosts();
   return (
     <>
       <section className="posts-section">
@@ -19,7 +21,7 @@ const PostsSection: FC = () => {
           <p>Java</p>
         </div>
         <div className="container-posts">
-          {posts.map((post, index) => (
+          {posts?.content.map((post, index) => (
             <PostCard {...post} key={index} />
           ))}
         </div>

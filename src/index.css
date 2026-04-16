@@ -3,21 +3,24 @@
   --secondary: #3B82F6;
   --text-color: #75758a;
 }
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
-html{
-position: relative;
-  max-width: 1280px;
-  background-color: rgb(35, 34, 34);
-}
-body{
+
+html {
   position: relative;
   max-width: 1280px;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+body {
+  position: relative;
+  max-width: 1280px;
+  height: 100%;
   background-color: #F8FAFC;
   font-family: Arial, Helvetica, sans-serif;
   margin: auto;
